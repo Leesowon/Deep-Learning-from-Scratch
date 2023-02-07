@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pylab as plt
 
 def step_function(x): 
-    return np.array(x > 0, dtype=np.int32)
+    return np.array(x > 0, dtype=np.int32) # np.int 만 쓰면 오류 발생
 
 x = np.arange(-5.0, 5.0, 0.1)
 y = step_function(x)
